@@ -43,6 +43,13 @@ public class Main {
 		
 		sellerDAO.insert(ns);
 		System.out.println("New seller " + ns.getId());
+		
+		
+		System.out.println("\n\n=== TESTE 5 ===");
+		seller = sellerDAO.findById(1);
+		seller.setName("Martha Waine");
+		sellerDAO.update(seller);
+		
 	}
 
 }
