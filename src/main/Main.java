@@ -29,6 +29,13 @@ public class Main {
 		}
 		
 		System.out.println("\n\n=== TESTE 3 ===");
+		
+		l = sellerDAO.findaAll();
+		
+		for(Seller obj : l) {
+			
+			System.out.println(obj);
+		}
 
 	}
 
